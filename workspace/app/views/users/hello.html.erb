@@ -1,0 +1,10 @@
+Hi <%- @users.where.not(name: 'Andrew').each do |user| %>
+<div>
+    <%= user.name %>,
+</div>
+<%end%>
+<br>
+The current datetime is <%= @current_date %>
+
+<h1><%= @post.title %></h1><br><br>
+<h3><%= @post.content %></h3>
